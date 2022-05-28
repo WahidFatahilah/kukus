@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_kukus" />
+
+    <TextView
+        android:id="@+id/et_registerTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/proza_libre"
+        android:text="@string/et_register_tittle"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/iv_register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_register" />
+
+    <TextView
+        android:id="@+id/tv_nameRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_name_register"
+        app:layout_constraintStart_toStartOf="@+id/et_registerTittle"
+        app:layout_constraintTop_toBottomOf="@+id/et_registerTittle" />
+
+    <EditText
+        android:id="@+id/et_nameRegister"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/et_name_register"
+        android:inputType="textPersonName"
+        android:textColor="#9C9C9C"
+        app:layout_constraintStart_toStartOf="@+id/tv_nameRegister"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nameRegister" />
+
+    <TextView
+        android:id="@+id/tv_emailRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/opensansmedium"
+        android:text="@string/tv_email_register"
+        android:textColor="#9C9C9C"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/et_nameRegister"
+        app:layout_constraintTop_toBottomOf="@+id/et_nameRegister" />
+
+    <EditText
+        android:id="@+id/et_emailRegister"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/opensansmedium"
+        android:hint="@string/et_email_register"
+        android:inputType="textEmailAddress"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/tv_emailRegister"
+        app:layout_constraintTop_toBottomOf="@+id/tv_emailRegister" />
+
+    <TextView
+        android:id="@+id/tv_passwordRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/opensansmedium"
+        android:text="@string/tv_password_register"
+        android:textColor="#9C9C9C"
+        app:layout_constraintStart_toStartOf="@+id/et_emailRegister"
+        app:layout_constraintTop_toBottomOf="@+id/et_emailRegister" />
+
+    <EditText
+        android:id="@+id/et_passwordRegister"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/opensansmedium"
+        android:hint="@string/et_password_register"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/tv_passwordRegister"
+        app:layout_constraintTop_toBottomOf="@+id/tv_passwordRegister" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="213dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_btn_loginregisteronboarding"
+        android:fontFamily="@font/robotoregular"
+        android:text="@string/btn_register"
+        android:textSize="20sp"
+        android:theme="@style/TemaButton"
+        app:layout_constraintEnd_toEndOf="@+id/et_passwordRegister"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/et_passwordRegister"
+        app:layout_constraintTop_toBottomOf="@+id/et_passwordRegister" />
+
+    <TextView
+        android:id="@+id/tv_haveAnAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/opensansmedium"
+        android:text="@string/tv_have_an_account"
+        android:textColor="#9C9C9C"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_registerHighlined"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_register"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+
+    <TextView
+        android:id="@+id/tv_registerHighlined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/opensansmedium"
+        android:text="@string/login"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_register"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

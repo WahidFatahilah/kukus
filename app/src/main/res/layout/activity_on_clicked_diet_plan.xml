@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_page_orangepastel"
+    tools:context=".OnClickedDietPlanActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="47dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_tittleDiet"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:fontFamily="@font/proza_libre"
+            android:text="@string/tv_tittleDiet"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_back"
+            app:layout_constraintStart_toEndOf="@+id/iv_back"
+            app:layout_constraintTop_toTopOf="@+id/iv_back" />
+
+        <ImageView
+            android:id="@+id/iv_tittleResepMakanan"
+            android:layout_width="340dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_corner_image"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/tv_tittleDiet"
+            app:layout_constraintStart_toStartOf="@+id/tv_tittleDiet"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tittleDiet"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_bodyDiet"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/opensansmedium"
+            android:text="@string/tv_bodyDiet"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/iv_back"
+            app:layout_constraintTop_toBottomOf="@+id/iv_tittleResepMakanan" />
+
+        <TextView
+            android:id="@+id/tv_tittleRekomendasiMakanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Rekomendasi Makanan"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_bodyDiet"
+            app:layout_constraintTop_toBottomOf="@+id/tv_bodyDiet" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_rekomendasiMakanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintStart_toStartOf="@+id/tv_tittleRekomendasiMakanan"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tittleRekomendasiMakanan"
+            tools:listitem="@layout/rv_list_on_click_diet_plan_rec">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/tv_tittleDos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/proza_libre"
+            android:text="@string/tv_tittleDos"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_tittleRekomendasiMakanan"
+            app:layout_constraintTop_toBottomOf="@+id/rv_rekomendasiMakanan" />
+
+        <TextView
+            android:id="@+id/tv_bodyDos"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensansmedium"
+            android:text="@string/tv_bodyDos"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_tittleDos"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tittleDos" />
+
+        <TextView
+            android:id="@+id/tv_tittleDonts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/proza_libre"
+            android:text="@string/tv_tittleDonts"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_bodyDos"
+            app:layout_constraintTop_toBottomOf="@+id/tv_bodyDos" />
+
+        <TextView
+            android:id="@+id/tv_bodyDonts"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensansmedium"
+            android:paddingBottom="20dp"
+            android:text="@string/tv_bodyDonts"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_tittleDonts"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tittleDonts" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

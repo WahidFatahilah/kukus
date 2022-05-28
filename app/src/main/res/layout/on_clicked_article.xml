@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hijau"
+    tools:context=".OnClickedDietPlanActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="47dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_tittleDiet"
+            android:layout_width="268dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="38dp"
+            android:fontFamily="@font/proza_libre"
+            android:text="Diet UI, efektif ga sih ?"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/img_back"
+            app:layout_constraintStart_toEndOf="@+id/img_back"
+            app:layout_constraintTop_toTopOf="@+id/img_back" />
+
+        <ImageView
+            android:id="@+id/img_article"
+            android:layout_width="340dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/img_article_title"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/tv_tittleDiet"
+            app:layout_constraintHorizontal_bias="0.833"
+            app:layout_constraintStart_toStartOf="@+id/tv_tittleDiet"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tittleDiet"
+            />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="354dp"
+            android:layout_height="421dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/opensansmedium"
+            android:text="@string/tv_Article"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/img_article"
+            app:layout_constraintStart_toStartOf="@+id/img_article"
+            app:layout_constraintTop_toBottomOf="@+id/img_article" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="253dp"
+            android:fontFamily="@font/opensansbold"
+            android:text="Similiar Topics"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/textView17"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="351dp"
+            android:layout_height="158dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView18"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView18"
+            app:layout_constraintTop_toBottomOf="@id/textView18"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/rv_article"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

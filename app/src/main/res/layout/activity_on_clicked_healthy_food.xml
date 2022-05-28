@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_page_hijaupastel"
+    tools:context=".OnClickedHealthyFoodActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="47dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_tittleResepMakanan"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:fontFamily="@font/proza_libre"
+            android:text="@string/iv_tittleResepMakanan"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_back"
+            app:layout_constraintStart_toEndOf="@+id/iv_back"
+            app:layout_constraintTop_toTopOf="@+id/iv_back" />
+
+        <ImageView
+            android:id="@+id/iv_tittleResepMakanan"
+            android:layout_width="340dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_corner_image"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/tv_tittleResepMakanan"
+            app:layout_constraintStart_toStartOf="@+id/tv_tittleResepMakanan"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tittleResepMakanan"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_tittleKandunganGizi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/proza_libre"
+            android:text="@string/tv_tittleKandunganGizi"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/iv_back"
+            app:layout_constraintTop_toBottomOf="@+id/iv_tittleResepMakanan" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="340dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_tittleKandunganGizi"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tittleKandunganGizi"
+            app:srcCompat="@drawable/ic_img_onclickedhealthyfood" />
+
+        <TextView
+            android:id="@+id/tv_tittleResep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/proza_libre"
+            android:text="@string/tv_tittleResep"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_tittleKandunganGizi"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/tv_tittleBahanBahan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/opensansmedium"
+            android:text="@string/tv_tittleBahanBahan"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_tittleResep"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tittleResep" />
+
+        <TextView
+            android:id="@+id/tv_bodyBahanBahan"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensansmedium"
+            android:text="@string/tv_bodyBahanBahan"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_tittleBahanBahan"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tittleBahanBahan" />
+
+        <TextView
+            android:id="@+id/tv_tittleCaraPembuatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/opensansmedium"
+            android:text="@string/tv_tittleCaraPembuatan"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_bodyBahanBahan"
+            app:layout_constraintTop_toBottomOf="@+id/tv_bodyBahanBahan" />
+
+        <TextView
+            android:id="@+id/tv_bodyCaraPembuatan"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_bodyCaraPembuatan"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:fontFamily="@font/opensansmedium"
+            android:paddingBottom="10dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_tittleCaraPembuatan"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tittleCaraPembuatan" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

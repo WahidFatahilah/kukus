@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:contentPaddingBottom="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_pictureProfile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/img_test_rv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_usernameProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/opensansmedium"
+            android:text="Wahid Fatahilah"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/img_pictureProfile"
+            app:layout_constraintStart_toEndOf="@+id/img_pictureProfile"
+            app:layout_constraintTop_toTopOf="@+id/img_pictureProfile" />
+
+        <ImageView
+            android:id="@+id/img_postingan"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_test_rv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_pictureProfile" />
+
+        <ImageView
+            android:id="@+id/img_icLove"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_postingan"
+            app:srcCompat="@drawable/ic_like" />
+
+        <ImageView
+            android:id="@+id/img_icComment"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_icLove"
+            app:layout_constraintStart_toEndOf="@+id/img_icLove"
+            app:layout_constraintTop_toTopOf="@+id/img_icLove"
+            app:srcCompat="@drawable/ic_comment" />
+
+        <TextView
+            android:id="@+id/tv_totalLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/opensansmedium"
+            android:text="100 Likes"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/img_icLove"
+            app:layout_constraintTop_toBottomOf="@+id/img_icLove" />
+
+        <TextView
+            android:id="@+id/tv_contentPostingan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/opensansmedium"
+            android:text="Lörem ipsum flipperförälder bibel möbelhund. Semifoni lav. Bioterrorism Stig Lundqvist, kutevis preck."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_totalLikes"
+            app:layout_constraintTop_toBottomOf="@+id/tv_totalLikes" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

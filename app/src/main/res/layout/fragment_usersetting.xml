@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Usersetting">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="411dp"
+        android:layout_height="81dp"
+        android:background="@drawable/img_topbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?attr/homeAsUpIndicator" >
+
+        <TextView
+            android:id="@+id/toolbarTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:fontFamily="@font/prozalibrebold"
+            android:textSize="20dp"
+            android:text="User Post"
+            android:textAppearance="@android:style/TextAppearance.WindowTitle"
+            android:visibility="visible" />
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/ic_userprofile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+
+    <TextView
+        android:id="@+id/tv_displayname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/opensansmedium"
+        android:text="Display Name"
+        android:textColor="#595959"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/opensansbold"
+        android:text="User Name"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_displayname" />
+
+    <ImageButton
+        android:id="@+id/btn_usernamesetting"
+        android:layout_width="38dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/ic_arrow_right"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_dietplan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toEndOf="@+id/tv_username"
+        app:layout_constraintTop_toBottomOf="@+id/tv_displayname" />
+
+    <TextView
+        android:id="@+id/tv_dietplan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/opensansmedium"
+        android:text="Diet Plan"
+        android:textColor="#595959"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+
+    <TextView
+        android:id="@+id/tv_dietplanuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/opensansbold"
+        android:text="Diet Plan"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dietplan" />
+
+    <ImageButton
+        android:id="@+id/btn_dietplansetting"
+        android:layout_width="38dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="216dp"
+        android:background="@drawable/ic_arrow_right"
+        app:layout_constraintBottom_toTopOf="@+id/tv_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toEndOf="@+id/tv_dietplanuser"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dietplan"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/opensansmedium"
+        android:text="Email"
+        android:textColor="#595959"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dietplanuser" />
+
+    <TextView
+        android:id="@+id/tv_emailuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/opensansbold"
+        android:text="Diet Plan"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+
+    <ImageButton
+        android:id="@+id/btn_emailsetting"
+        android:layout_width="38dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/ic_arrow_right"
+        app:layout_constraintBottom_toTopOf="@+id/tv_passwordsettingtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toEndOf="@+id/tv_dietplanuser"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+
+    <TextView
+        android:id="@+id/tv_passwordsettingtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:fontFamily="@font/opensansmedium"
+        android:text="Password"
+        android:textColor="#595959"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dietplanuser" />
+
+    <TextView
+        android:id="@+id/tv_passwordsetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/opensansbold"
+        android:password="true"
+        android:text="Diet Plan"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+
+    <ImageButton
+        android:id="@+id/btn_passwordsetting"
+        android:layout_width="38dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_arrow_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toEndOf="@+id/tv_passwordsetting"
+        app:layout_constraintTop_toBottomOf="@+id/tv_passwordsettingtitle" />
+
+
+    <TextView
+        android:id="@+id/tv_languagesetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/opensansmedium"
+        android:text="Language"
+        android:textColor="#595959"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_passwordsetting" />
+
+    <TextView
+        android:id="@+id/tv_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/opensansbold"
+        android:text="English"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_languagesetting" />
+
+    <ImageButton
+        android:id="@+id/btn_languagesetting"
+        android:layout_width="38dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_arrow_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toEndOf="@+id/tv_language"
+        app:layout_constraintTop_toBottomOf="@+id/tv_languagesetting" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

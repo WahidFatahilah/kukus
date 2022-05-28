@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_onboarding2_scene">
+
+    <!-- Input 1 -->
+
+    <Button
+        android:id="@+id/btn_lose_weight"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotomedium"
+        android:text="Lose Weight"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_onboard_1a"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="501dp" />
+
+    <Button
+        android:id="@+id/btn_gain_weight"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotomedium"
+        android:text="Gain Weight"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_onboard1b"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="501dp" />
+
+    <TextView
+        android:id="@+id/question1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/prozalibrebold"
+        android:text="Apa tujuan tubuh ideal kamu?"
+        android:textColor="@color/hitam"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="321dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensansbold"
+        android:text="Mari Kita Kenalan Dulu"
+        android:textColor="@color/hitam"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="321dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+
+    <!-- Input 2 -->
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensansbold"
+        android:text="Berhasil Disimpan"
+        android:textColor="@color/hitam"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <TextView
+        android:id="@+id/question2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apa Jenis Kelamin Kamu?"
+        android:textColor="@color/hitam"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="304dp" />
+
+
+    <Button
+        android:id="@+id/btn_pria"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:drawableLeft="@drawable/ic_onboard_1a"
+        android:drawableTint="@color/hijau"
+        android:fontFamily="@font/robotomedium"
+        android:scaleType="fitXY"
+        android:text="Pria"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:theme="@style/ButtonOnboarding"
+        app:strokeColor="#404040"
+        app:strokeWidth="2dp"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="204dp" />
+
+    <Button
+        android:id="@+id/btn_wanita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:drawableLeft="@drawable/ic_onboard1b"
+        android:drawableTint="@color/hijau"
+        android:fontFamily="@font/robotomedium"
+        android:text="Wanita"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:theme="@style/ButtonOnboarding"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:strokeColor="#404040"
+        app:strokeWidth="2dp"
+        tools:layout_editor_absoluteX="296dp" />
+
+
+    <!-- Input 3 -->
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensansbold"
+        android:text="Personalisasi Didapatkan"
+        android:textColor="@color/hitam"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <TextView
+        android:id="@+id/question3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kapan tanggal lahir kamu ?"
+        android:textColor="@color/hitam"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="304dp" />
+
+
+    <!-- Input 4 -->
+    <!-- Input 5 -->
+    <!-- Input 6 -->
+    <!-- Input 7 -->
+
+
+
+
+
+
+<!-- Indikator -->
+
+
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input1"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input2"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_rectangle"
+        app:tint="@color/hijau" />
+
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input2"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input7"
+        app:layout_constraintStart_toEndOf="@+id/input1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_rectangle"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input3"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_rectangle"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input4"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input3"
+        app:layout_constraintStart_toEndOf="@+id/input5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_rectangle"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input5"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input4"
+        app:layout_constraintStart_toEndOf="@+id/input6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_rectangle"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input6"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input5"
+        app:layout_constraintStart_toEndOf="@+id/input7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_rectangle"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input7"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input6"
+        app:layout_constraintStart_toEndOf="@+id/input2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_rectangle"
+        app:tint="@color/hijau" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="71dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

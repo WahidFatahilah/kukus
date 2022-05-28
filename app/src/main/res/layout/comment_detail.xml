@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_pictureProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/img_test_rv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_usernameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/opensansmedium"
+        android:text="Wahid Fatahilah"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img_pictureProfile"
+        app:layout_constraintStart_toEndOf="@+id/img_pictureProfile"
+        app:layout_constraintTop_toTopOf="@+id/img_pictureProfile" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/opensansmedium"
+        android:text="Hallo guys, Ini postingan pertama gue nih. Di Kukus banyak fitur yang bermanfaat buat orang yang mau nurunin berat badan kayak gue. Kalian udah ngerasain manfaatnya belom setelah gunain aplikasi ini ?"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/img_pictureProfile"
+        app:layout_constraintTop_toBottomOf="@+id/tv_usernameProfile" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        app:srcCompat="@drawable/bg_line" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        tools:listitem="@layout/rv_list_detail_komentar">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/abuabu_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:background="@color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/opensansmedium"
+        android:hint="Tulis komentar disini..."
+        android:inputType="textPersonName"
+        android:textColorHint="@color/abuabu_4"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/opensansmedium"
+        android:text="SEND"
+        android:textColor="@color/abuabu_4"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
