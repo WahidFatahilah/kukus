@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000"
+        motion:autoTransition="animateToEnd">
+        <KeyFrameSet>
+
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_height="318dp"
+            android:layout_width="331dp"
+            android:id="@+id/imageView"
+            motion:layout_editor_absoluteY="57dp"
+            motion:layout_editor_absoluteX="237dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:id="@+id/img_1"
+            motion:layout_constraintStart_toStartOf="@+id/imageView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.333"
+            motion:layout_constraintBottom_toBottomOf="@+id/imageView"
+            motion:layout_constraintVertical_bias="0.495" />
+        <Constraint
+            motion:layout_editor_absoluteY="415dp"
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteX="257dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_title1" />
+        <Constraint
+            motion:layout_editor_absoluteY="533dp"
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteX="180dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_body1" />
+        <Constraint
+            android:layout_height="210dp"
+            android:layout_width="223dp"
+            android:id="@+id/img_2"
+            motion:layout_editor_absoluteY="125dp"
+            motion:layout_constraintStart_toEndOf="parent" />
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title2"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="@id/img_2" />
+        <Constraint
+            android:id="@+id/menu1"
+            motion:layout_constraintEnd_toStartOf="@+id/menu2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintTop_toBottomOf="parent"
+            android:layout_marginStart="32dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/menu2"
+            motion:layout_constraintEnd_toStartOf="@+id/menu3"
+            motion:layout_constraintStart_toEndOf="@+id/menu1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/menu1"
+            motion:layout_constraintVertical_bias="0.0"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="@+id/menu1" />
+        <Constraint
+            android:id="@+id/menu3"
+            motion:layout_constraintEnd_toStartOf="@+id/menu4"
+            motion:layout_constraintStart_toEndOf="@+id/menu2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/menu2"
+            motion:layout_constraintVertical_bias="0.0"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="@+id/menu2" />
+        <Constraint
+            android:id="@+id/menu4"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/menu3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/menu3"
+            motion:layout_constraintVertical_bias="0.0"
+            android:layout_marginEnd="32dp"
+            motion:layout_constraintTop_toTopOf="@+id/menu3" />
+        <Constraint
+            android:id="@+id/tv_body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="@id/img_2"
+            motion:layout_constraintStart_toStartOf="@id/img_2" />
+        <Constraint
+            android:id="@+id/img_3"
+            motion:layout_constraintStart_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="80dp" />
+        <Constraint
+            android:id="@+id/tv_body3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteY="588dp"
+            motion:layout_constraintStart_toEndOf="parent" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteX="169dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_Mulai"
+            motion:layout_constraintTop_toBottomOf="parent" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/img_4"
+            motion:layout_constraintStart_toStartOf="@+id/img_4"
+            android:id="@+id/tv_body4" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/img_4"
+            motion:layout_constraintStart_toStartOf="@+id/img_4"
+            android:id="@+id/tv_title4" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintEnd_toEndOf="@id/imageView"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/imageView"
+            android:id="@+id/tv_title3"
+            android:layout_marginStart="32dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_title1"
+            motion:layout_constraintStart_toStartOf="@+id/imageView"
+            motion:layout_constraintEnd_toEndOf="@+id/imageView"
+            motion:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="50dp" />
+        <Constraint
+            android:layout_height="318dp"
+            android:layout_marginTop="32dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintHorizontal_bias="0.387"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="331dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/imageView"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+        <Constraint
+            android:layout_height="204dp"
+            motion:layout_constraintTop_toTopOf="@+id/imageView"
+            android:layout_width="311dp"
+            android:id="@+id/img_1"
+            motion:layout_constraintStart_toStartOf="@+id/imageView"
+            motion:layout_constraintEnd_toEndOf="@+id/imageView"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="50dp"
+            motion:layout_constraintHorizontal_bias="0.386"
+            motion:layout_constraintBottom_toBottomOf="@+id/imageView"
+            motion:layout_constraintVertical_bias="0.394"
+            android:layout_marginStart="32dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_body1"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_title1"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintEnd_toEndOf="@+id/tv_title1"
+            motion:layout_constraintStart_toStartOf="@+id/tv_title1"
+            motion:layout_constraintHorizontal_bias="0.459" />
+        <Constraint
+            android:layout_height="31dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            android:layout_width="38dp"
+            motion:layout_constraintEnd_toStartOf="@+id/menu2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp"
+            android:id="@+id/menu1"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="32dp">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/menu2"
+            motion:layout_constraintEnd_toStartOf="@+id/menu3"
+            motion:layout_constraintStart_toEndOf="@+id/menu1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/menu1"
+            motion:layout_constraintVertical_bias="0.0"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="@+id/menu1">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/menu3"
+            motion:layout_constraintEnd_toStartOf="@+id/menu4"
+            motion:layout_constraintStart_toEndOf="@+id/menu2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/menu2"
+            motion:layout_constraintVertical_bias="0.0"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="@+id/menu2">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/menu4"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/menu3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/menu3"
+            motion:layout_constraintVertical_bias="0.0"
+            android:layout_marginEnd="32dp"
+            motion:layout_constraintTop_toTopOf="@+id/menu3">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteY="32dp"
+            android:id="@+id/img_2"
+            motion:layout_constraintStart_toEndOf="parent" />
+        <Constraint
+            android:layout_height="17dp"
+            motion:layout_constraintEnd_toEndOf="@+id/img_3"
+            android:layout_width="233dp"
+            motion:layout_constraintTop_toBottomOf="@+id/img_3"
+            android:id="@+id/tv_body3"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_editor_absoluteX="520dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/img_4"
+            motion:layout_constraintStart_toStartOf="@+id/img_4"
+            android:id="@+id/tv_body4" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/img_4"
+            motion:layout_constraintStart_toStartOf="@+id/img_4"
+            android:id="@+id/tv_title4" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/img_3"
+            android:id="@+id/tv_title3"
+            motion:layout_constraintStart_toEndOf="parent"
+            android:layout_marginStart="32dp" />
+        <Constraint
+            motion:layout_constraintEnd_toEndOf="@+id/img_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/img_2"
+            android:id="@+id/tv_body2"
+            motion:layout_constraintStart_toEndOf="parent"
+            android:layout_marginStart="200dp" />
+    </ConstraintSet>
+    <ConstraintSet
+        android:id="@+id/onboarding2"
+        motion:deriveConstraintsFrom="@+id/end" >
+        <Constraint
+            android:id="@+id/img_1"
+            android:layout_height="204dp"
+            android:layout_width="311dp"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_editor_absoluteY="110dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/img_2"
+            motion:layout_constraintStart_toStartOf="@+id/imageView"
+            motion:layout_constraintBottom_toBottomOf="@+id/imageView"
+            motion:layout_constraintTop_toTopOf="@+id/imageView"
+            motion:layout_constraintEnd_toEndOf="@+id/imageView" />
+        <Constraint
+            android:layout_height="318dp"
+            android:layout_width="331dp"
+            android:id="@+id/imageView"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="32dp"
+            motion:layout_constraintEnd_toStartOf="@+id/img_1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_title1"
+            motion:layout_constraintTop_toBottomOf="@+id/img_1"
+            motion:layout_constraintStart_toEndOf="@+id/img_1" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_title2"
+            motion:layout_constraintEnd_toEndOf="@+id/imageView"
+            motion:layout_constraintStart_toStartOf="@+id/img_2"
+            motion:layout_constraintTop_toBottomOf="@+id/img_2"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="82dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="50dp" />
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_body2"
+            motion:layout_constraintStart_toStartOf="@+id/tv_title2"
+            motion:layout_constraintEnd_toEndOf="@+id/tv_title2"
+            android:layout_marginEnd="0dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_title2"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintHorizontal_bias="0.448" />
+        <Constraint
+            android:id="@+id/tv_body1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="16dp"
+            motion:layout_editor_absoluteY="533dp"
+            motion:layout_constraintStart_toStartOf="@id/tv_title1" />
+        <Constraint
+            android:id="@+id/menu2"
+            motion:layout_constraintEnd_toStartOf="@+id/menu3"
+            motion:layout_constraintStart_toEndOf="@+id/menu1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/menu1"
+            motion:layout_constraintVertical_bias="0.0"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="@+id/menu1"
+            motion:crossfade="1" >
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/menu1"
+            android:layout_height="31dp"
+            android:layout_width="38dp"
+            android:layout_marginStart="32dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:crossfade="0"
+            motion:layout_constraintEnd_toStartOf="@+id/menu2"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="32dp"
+            motion:layout_constraintHorizontal_bias="0.5">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
+        </Constraint>
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/end"
+        motion:constraintSetEnd="@+id/onboarding2" >
+        <OnSwipe motion:dragDirection="dragLeft" />
+    </Transition>
+    <ConstraintSet
+        android:id="@+id/onboarding3"
+        motion:deriveConstraintsFrom="@+id/onboarding2" >
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/img_2"
+            motion:layout_editor_absoluteY="125dp" />
+        <Constraint
+            android:id="@+id/tv_title2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toTopOf="@id/img_2"
+            motion:layout_editor_absoluteX="151dp"
+            android:layout_marginTop="228dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_body2"
+            motion:layout_constraintTop_toBottomOf="@id/tv_title2"
+            motion:layout_editor_absoluteX="411dp" />
+        <Constraint
+            android:id="@+id/menu3"
+            motion:layout_constraintEnd_toStartOf="@+id/menu4"
+            motion:layout_constraintStart_toEndOf="@+id/menu2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/menu2"
+            motion:layout_constraintVertical_bias="0.0"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="@+id/menu2"
+            motion:crossfade="1" >
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/menu2"
+            motion:layout_constraintEnd_toStartOf="@+id/menu3"
+            motion:layout_constraintStart_toEndOf="@+id/menu1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/menu1"
+            motion:layout_constraintVertical_bias="0.0"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="@+id/menu1"
+            motion:crossfade="1">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/img_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="@+id/imageView"
+            motion:layout_constraintEnd_toEndOf="@+id/imageView"
+            motion:layout_constraintTop_toTopOf="@+id/imageView"
+            android:layout_marginTop="20dp"
+            motion:layout_constraintHorizontal_bias="1.0" />
+        <Constraint
+            android:id="@+id/tv_body3"
+            motion:layout_constraintEnd_toEndOf="@id/tv_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_title3"
+            motion:layout_constraintStart_toStartOf="@+id/tv_title3"
+            motion:layout_constraintHorizontal_bias="0.501"
+            android:layout_marginTop="50dp" />
+        <Constraint
+            android:id="@+id/menu4"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/menu3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/menu3"
+            motion:layout_constraintVertical_bias="0.0"
+            android:layout_marginEnd="32dp"
+            motion:layout_constraintTop_toTopOf="@+id/menu3"
+            motion:crossfade="1" >
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/tv_title3"
+            android:layout_width="128dp"
+            android:layout_height="55dp"
+            motion:layout_constraintEnd_toEndOf="@+id/imageView"
+            motion:layout_constraintTop_toBottomOf="@+id/imageView"
+            motion:layout_constraintStart_toStartOf="@+id/imageView"
+            android:layout_marginTop="50dp" />
+        <Constraint
+            android:layout_height="31dp"
+            android:layout_marginBottom="32dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            android:layout_width="38dp"
+            motion:layout_constraintEnd_toStartOf="@+id/menu2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp"
+            android:id="@+id/menu1" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/onboarding2"
+        motion:constraintSetEnd="@+id/onboarding3" >
+        <OnSwipe motion:dragDirection="dragLeft" />
+    </Transition>
+    <ConstraintSet
+        android:id="@+id/onboarding4"
+        motion:deriveConstraintsFrom="@+id/onboarding3" >
+        <Constraint
+            android:id="@+id/menu4"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/menu3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/menu3"
+            motion:layout_constraintVertical_bias="0.0"
+            android:layout_marginEnd="32dp"
+            motion:layout_constraintTop_toTopOf="@+id/menu3"
+            motion:crossfade="1">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/menu3"
+            motion:layout_constraintEnd_toStartOf="@+id/menu4"
+            motion:layout_constraintStart_toEndOf="@+id/menu2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/menu2"
+            motion:layout_constraintVertical_bias="0.0"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="@+id/menu2"
+            motion:crossfade="1">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:layout_height="31dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            android:layout_width="38dp"
+            motion:layout_constraintEnd_toStartOf="@+id/menu2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp"
+            android:id="@+id/menu1" />
+        <Constraint
+            android:layout_height="49dp"
+            android:layout_width="156dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_body4"
+            android:id="@+id/btn_Mulai"
+            motion:layout_constraintStart_toStartOf="@+id/tv_body4"
+            motion:layout_constraintEnd_toEndOf="@+id/tv_body4"
+            motion:layout_constraintHorizontal_bias="0.498"
+            android:layout_marginTop="110dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/img_3"
+            motion:layout_editor_absoluteY="80dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_body3"
+            motion:layout_editor_absoluteY="533dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_body4"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_title4"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintStart_toStartOf="@+id/tv_title4"
+            motion:layout_constraintEnd_toEndOf="@+id/tv_title4"
+            motion:layout_constraintHorizontal_bias="0.501" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="@+id/imageView"
+            android:layout_width="wrap_content"
+            motion:layout_constraintStart_toStartOf="@+id/imageView"
+            android:id="@+id/img_4" />
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title4"
+            motion:layout_constraintStart_toStartOf="@+id/imageView"
+            motion:layout_constraintEnd_toEndOf="@+id/imageView"
+            motion:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginTop="50dp" />
+        <Constraint
+            android:layout_height="55dp"
+            android:layout_width="128dp"
+            android:id="@+id/tv_title3"
+            motion:layout_constraintStart_toEndOf="parent"
+            android:layout_marginStart="32dp" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/onboarding3"
+        motion:constraintSetEnd="@+id/onboarding4" >
+        <OnSwipe motion:dragDirection="dragLeft" />
+    </Transition>
+</MotionScene>

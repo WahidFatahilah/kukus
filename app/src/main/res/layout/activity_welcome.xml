@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_welcome_scene"
+    tools:context=".WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="331dp"
+        android:layout_height="318dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintStart_toEndOf="@+id/img_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_onboarding" />
+
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        app:altSrc="@drawable/ic_circle_full_24"
+        app:layout_constraintEnd_toStartOf="@+id/menu2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/orange" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:altSrc="@drawable/ic_circle_full_24"
+        app:layout_constraintBottom_toBottomOf="@+id/menu1"
+        app:layout_constraintEnd_toStartOf="@+id/menu3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/menu1"
+        app:layout_constraintTop_toTopOf="@+id/menu1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/orange" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:altSrc="@drawable/ic_circle_full_24"
+        app:layout_constraintBottom_toBottomOf="@+id/menu2"
+        app:layout_constraintEnd_toStartOf="@+id/menu4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/menu2"
+        app:layout_constraintTop_toTopOf="@+id/menu2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/orange" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="32dp"
+        app:altSrc="@drawable/ic_circle_full_24"
+        app:layout_constraintBottom_toBottomOf="@+id/menu3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/menu3"
+        app:layout_constraintTop_toTopOf="@+id/menu3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/orange" />
+
+
+
+    <!-- Onboarding 1 -->
+
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_onboarding1"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/prozalibremedium"
+        android:gravity="center"
+        android:text="Selamat Datang \n Di Aplikasi KUKUS"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_1"
+        app:layout_constraintStart_toStartOf="@+id/img_1"
+        app:layout_constraintTop_toBottomOf="@+id/img_1" />
+
+
+    <TextView
+        android:id="@+id/tv_body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensansmedium"
+        android:gravity="center"
+        android:text="Aplikasi yang membantu anda untuk menerapkan gaya hidup sehat"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title1"
+        app:layout_constraintStart_toStartOf="@+id/tv_title1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title1" />
+
+    <ImageView
+        android:id="@+id/img_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_onboarding2" />
+
+    <TextView
+        android:id="@+id/tv_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/prozalibremedium"
+        android:gravity="center"
+        android:text="Scan Kalori"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_2"
+        app:layout_constraintStart_toStartOf="@+id/img_2"
+        app:layout_constraintTop_toBottomOf="@+id/img_2" />
+
+
+    <!-- Onboarding 3 -->
+
+    <TextView
+        android:id="@+id/tv_body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensansmedium"
+        android:gravity="center"
+        android:text="Anda dapat mengetahui jumlah kalori pada makanan dengan mudah "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_2"
+        app:layout_constraintStart_toStartOf="@+id/img_2"
+        app:layout_constraintTop_toBottomOf="@+id/img_2" />
+
+    <ImageView
+        android:id="@+id/img_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_onboarding3" />
+
+
+    <!--
+    Onboarding 4
+    -->
+
+
+    <TextView
+        android:id="@+id/tv_title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/prozalibremedium"
+        android:gravity="center"
+        android:text="Explore"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <TextView
+        android:id="@+id/tv_body3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensansmedium"
+        android:gravity="center"
+        android:text="Anda dapat berbagi pengalaman seputar diet kepada pengguna lain "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_3"
+        app:layout_constraintStart_toStartOf="@+id/img_3"
+        app:layout_constraintTop_toBottomOf="@+id/img_3" />
+
+    <ImageView
+        android:id="@+id/img_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_onboarding4" />
+
+
+    <TextView
+        android:id="@+id/tv_title4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/prozalibremedium"
+        android:gravity="center"
+        android:text="Diary"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_4"
+        app:layout_constraintStart_toStartOf="@+id/img_4"
+        app:layout_constraintTop_toBottomOf="@+id/img_4" />
+
+    <TextView
+        android:id="@+id/tv_body4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensansmedium"
+        android:gravity="center"
+        android:text="Catat Progress kemajuan diet anda dengan menggunakan diary "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_4"
+        app:layout_constraintStart_toStartOf="@+id/img_4"
+        app:layout_constraintTop_toBottomOf="@+id/img_4" />
+
+    <Button
+        android:id="@+id/btn_Mulai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_loginregisteronboarding"
+        android:fontFamily="@font/robotoregular"
+        android:onClick="StartOnboarding"
+        android:text="Mulai"
+        android:theme="@style/TemaButton"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="649dp" />
+
+    <!-- Onboarding 5 -->
+
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

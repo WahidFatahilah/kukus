@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.profile.FragmentAddNewPost"
+    android:orientation="vertical">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:background="@drawable/img_topbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?attr/homeAsUpIndicator" >
+
+        <TextView
+            android:id="@+id/toolbarTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:fontFamily="@font/prozalibrebold"
+            android:textSize="20dp"
+            android:text="User Post"
+            android:textAppearance="@android:style/TextAppearance.WindowTitle"
+            android:visibility="visible" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_userprofile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:fontFamily="@font/prozalibrebold"
+            android:text="Post"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/button4"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="@+id/button4"
+            app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="325dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_rectangle"
+            android:gravity="top|start"
+
+            android:hint="Please Insert Your Post Here"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:maxLines="10"
+            android:minLines="6"
+            android:scrollbars="vertical"
+            android:shadowColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/textView15"
+            app:layout_constraintHorizontal_bias="0.551"
+            app:layout_constraintStart_toStartOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+     <!--   <ImageView
+            android:id="@+id/view2"
+            android:layout_width="327dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bg_rectangle"
+            app:layout_constraintBottom_toBottomOf="@+id/editText"
+            app:layout_constraintEnd_toEndOf="@+id/editText"
+            app:layout_constraintStart_toStartOf="@+id/editText"
+            app:layout_constraintTop_toTopOf="@+id/editText" />-->
+
+        <TextView
+            android:id="@+id/tv_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/prozalibrebold"
+            android:text="Picture"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/editText"
+            app:layout_constraintHorizontal_bias="0.422"
+            app:layout_constraintStart_toStartOf="@+id/editText"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/opensansbold"
+            android:text="Please Insert a Image"
+            android:textColor="#605C5C"
+            app:layout_constraintEnd_toEndOf="@+id/tv_picture"
+            app:layout_constraintHorizontal_bias="0.65"
+            app:layout_constraintStart_toStartOf="@+id/tv_picture"
+            app:layout_constraintTop_toBottomOf="@+id/tv_picture" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="159dp"
+            android:layout_height="142dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/ic_camera"
+
+            app:layout_constraintEnd_toEndOf="@+id/textView16"
+            app:layout_constraintStart_toStartOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/robotoblack"
+            android:text="Send Post"
+            app:layout_constraintEnd_toEndOf="@+id/button5"
+            app:layout_constraintStart_toStartOf="@+id/button5"
+            app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="roundimageview">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">30dp</item>
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="roundimageview2">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="roundimageview3">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15dp</item>
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="roundimageviewRipple">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+        <item name="color">@color/white</item>
+    </style>
+
+</resources>

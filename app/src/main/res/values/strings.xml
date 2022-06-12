@@ -1,0 +1,114 @@
+<resources>
+    //Bottom Nav Bar
+    <string name="app_name">Kukus</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_explore">Explore</string>
+    <string name="nav_scan">Scan</string>
+    <string name="nav_diary">Diary</string>
+    <string name="nav_profile">Profile</string>
+
+    //Register Page
+    <string name="et_register_tittle">Daftar</string>
+    <string name="tv_email_register">Email</string>
+    <string name="et_email_register">Masukkan Emailmu Disini</string>
+    <string name="tv_password_register">Password</string>
+    <string name="et_password_register">Masukkan Passwordmu Disini</string>
+    <string name="btn_register">Daftar</string>
+    <string name="tv_have_an_account">Sudah Punya Akun ?</string>
+    <string name="login">Masuk</string>
+    <string name="et_name_register">Masukkan Nama Kamu Disini</string>
+    <string name="tv_name_register">Nama</string>
+
+    //Login Page
+    <string name="et_login_tittle">Masuk</string>
+    <string name="tv_email_login">Email</string>
+    <string name="et_email_login">Masukkan Emailmu Disini</string>
+    <string name="tv_password_login">Password</string>
+    <string name="et_password_login">Masukkan Passwordmu Disini</string>
+    <string name="btn_login">Masuk</string>
+    <string name="tv_dontHaveAnAccount">BELUM PUNYA AKUN ?</string>
+    <string name="tv_login_highlined">DAFTAR</string>
+
+    //OnClickedHealthyFoodRecomActivity
+    <string name="iv_tittleResepMakanan">Kentang keju brokoli</string>
+    <string name="tv_tittleKandunganGizi">Kandungan Gizi</string>
+    <string name="tv_tittleResep">Resep</string>
+    <string name="tv_tittleBahanBahan">Bahan-bahan</string>
+    <string name="tv_bodyBahanBahan">• 500 gram bayam buras (kampung), potong-potong\n• 4 siung bawang putih, memarkan, cincang\n• 3 cm jahe, memarkan\n• ½ sdt merica bubuk\n• ½ sdt garam\n• 3 sdm madu</string>
+    <string name="tv_tittleCaraPembuatan">Cara pembuatan</string>
+    <string name="tv_bodyCaraPembuatan">• Masak bayam dengan bawang, jahe, merica, garam dan air hingga empuk, berubah warna, dan air menyusut. Tambahkan kecap, aduk rata.\n• Masak hingga bumbu meresap, jika sudah angkat. Sembari itu siapkan tempat bakaran dengan arang.\n• Bakar bayam di atas bara api sambil diolesi madu. Bakar sambil dibolak-balik hingga ayam matang dan jangan sampai gosong.</string>
+
+    //OnClickedDietPlanRecomActivity
+    <string name="tv_tittleDiet">Mediteranian Diet</string>
+    <string name="tv_bodyDiet">Rich in flavorful ingredients like fruits, vegetables, whole grains, and heart-healthy fats, the Mediterranean diet is equal parts delicious and nutritious.\n\nIt’s also associated with a variety of benefits and may help support brain function, promote heart health, regulate blood sugar levels, and more.\n\nAlthough there are no concrete rules for how to follow the Mediterranean diet, there are many general guidelines you can follow to incorporate the principles of the diet into your daily routine.</string>
+    <string name="tv_tittleDos">DOS</string>
+    <string name="tv_bodyDos">• Do Lörem ipsum dira tetraledes paliga prer om romkom, ultrahyng geoktiga solig on exopaligt vungar dor\n\n• Do Lörem ipsum dira tetraledes paliga prer om romkom, ultrahyng geoktiga solig on exopaligt vungar dor\n\n• Do Lörem ipsum dira tetraledes paliga prer om romkom, ultrahyng geoktiga solig on exopaligt vungar dor</string>
+    <string name="tv_tittleDonts">DONT\'S</string>
+    <string name="tv_bodyDonts">• Do Lörem ipsum dira tetraledes paliga prer om romkom, ultrahyng geoktiga solig on exopaligt vungar dor\n\n• Do Lörem ipsum dira tetraledes paliga prer om romkom, ultrahyng geoktiga solig on exopaligt vungar dor\n\n• Do Lörem ipsum dira tetraledes paliga prer om romkom, ultrahyng geoktiga solig on exopaligt vungar dor</string>
+
+    //OnClickedArticle
+    <string name="tv_Article">Lörem ipsum multid fafavis coronahälsning. Modemkapare Linnéa Olofsson. Sel nadevarade för att gångpeng. Lörtad stereologi. Viagra Ingvar Isaksson. Porar traning, Lars Blom i drop shipping. Flöde kafassa karyrad om Anders Berglund spetenat. Beng Eva Isaksson. Hypergen askbränd i natobel gångfartsgata. Krofår becknarväska. \n Viktig häris nisade. Arvid Axelsson valpromenera Agnes Holm innan David Mattsson. Micro-moments multihäre. Rohylig Johan Isaksson medan kärutese desitet i rev. Dan Norberg kätore. \n Kristina Ekström tragt elektroplastisk, vikynade, reass. Sudoku ruse syprebel än pudoligen. Analiga belig påspevis. Åsa Nyström minabelt nåska misomodern, rere. Lir gurlesk. \n Nirade Kjell Gunnarsson såsom soss renadiskapet, påss. Nerining mikroblogg plus trollfabrik atoliga håmibelt. Stenos belingar Hanna Fransson. VAR nigel som båktig. Claes Forsberg coronahälsning jäda det Christian Lundin om än sin. \n Sandra Ekström kun, i sen. Polypism nasm kotlettfrilla beda än Johannes Ekström. Sara Wallin poböskapet Astrid Hansson stenopor om än multigt. Byvis Ali Falk för SERP. Posaktig nal, kol trasisade polyrar.</string>
+
+    //HomeFragment
+    <string name="tv_tittleCalorie">2000</string>
+    <string name="tv_bodyCalorie">Kalori Tersisa</string>
+    <string name="tv_tittleBurned">0</string>
+    <string name="tv_tittleConsumed">0</string>
+    <string name="tv_bodyConsumed">Dikonsumsi</string>
+    <string name="tv_bodyBurned">Dibakar</string>
+    <string name="tv_tittleDietPlanRec">Diet Plan Recommendation</string>
+    <string name="tv_tittleHealthyFoodRec">Healthy Food Recommendation</string>
+    <string name="tv_tittleExerciseRec">Exercise Recommendation</string>
+
+    //DiaryFragment
+    <string name="tv_tittleDiaryCalorie">2000</string>
+    <string name="tv_bodyDiaryCalorie">Kalori Tersisa</string>
+    <string name="tv_tittleDiaryConsumed">0</string>
+    <string name="tv_tittleDiaryBurned">0</string>
+    <string name="tv_bodyDiaryConsumed">Dikonsumsi</string>
+    <string name="tv_bodyDiaryBurned">Dibakar</string>
+    <string name="tv_tittleBreakfast">Tambah Makan Pagi</string>
+    <string name="tv_subTittleBreakfast">Rekomendasi:</string>
+    <string name="tv_bodyBreakfast">500–700 kal</string>
+    <string name="tv_tittleLunch">Tambah Makan Siang</string>
+    <string name="tv_subTittleLunch">Rekomendasi:</string>
+    <string name="tv_bodyLunch">500–700 kal</string>
+    <string name="tv_tittleDinner">Tambah Makan Malam</string>
+    <string name="tv_subTittleDinner">Rekomendasi:</string>
+    <string name="tv_bodyDinner">500–700 kal</string>
+    <string name="tv_tittleExercise">Tambah Kegiatan Olahraga</string>
+    <string name="tv_subTittleExercise">Rekomendasi:</string>
+    <string name="tv_bodyExercise">500–700 kal</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_header_desc">userAvatar</string>
+    <string name="nav_header_title">Username</string>
+    <string name="action_settings">Setting</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Galery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="tab_text_1">Summary</string>
+    <string name="tab_text_2">Post</string>
+    <string name="tv_onboarding_pesan">Kami menggunakan informasi ini untuk memberikan rekomendasi harian sesuai personalisasi kamu</string>
+
+    //RV Explorer
+    <string name="tv_totalLikes">100</string>
+    <string name="tv_likes">Likes</string>
+
+    //auth
+    <string name="please_wait"><![CDATA[Please Wait :)]]></string>
+    <string name="please_click_back_again_to_exit">Click again to exit</string>
+
+    <string name="empty">Data ini tidak boleh kosong</string>
+
+</resources>

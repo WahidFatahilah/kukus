@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btn_drawer"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_drawer"
+        android:paddingStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_searchview"
+        android:backgroundTint="@color/abuabu_2"
+        android:iconifiedByDefault="false"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_drawer"
+        app:layout_constraintEnd_toStartOf="@+id/btn_notification"
+        app:layout_constraintStart_toEndOf="@+id/btn_drawer"
+        app:layout_constraintTop_toTopOf="@+id/btn_drawer"
+        app:queryBackground="@color/transparent"
+        app:queryHint="Cari disini"
+        app:searchHintIcon="@drawable/ic_search"
+        app:searchIcon="@drawable/ic_search" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btn_notification"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="right"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_notification"
+        android:tint="#626C68"
+        app:layout_constraintBottom_toBottomOf="@+id/searchView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/searchView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

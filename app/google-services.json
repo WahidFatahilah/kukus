@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "795336103698",
+    "project_id": "micro-liberty-351413",
+    "storage_bucket": "micro-liberty-351413.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795336103698:android:4b58d513b79bcdcd81c5cb",
+        "android_client_info": {
+          "package_name": "com.bangkit.kukus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "795336103698-vjpblefm4lgpc0u84l5bmqrj7146ms9b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP-wKX2Ddq5d0LXN5xGS20NDZGbjvvRy4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "795336103698-vjpblefm4lgpc0u84l5bmqrj7146ms9b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

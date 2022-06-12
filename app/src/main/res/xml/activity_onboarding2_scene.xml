@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <KeyFrameSet>
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/title1"
+            motion:layout_constraintTop_toBottomOf="@+id/question1"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintEnd_toEndOf="@+id/question1"
+            motion:layout_constraintStart_toStartOf="@+id/question1" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/question1"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="100dp"
+            motion:layout_constraintStart_toEndOf="parent" />
+        <Constraint
+            android:layout_height="90dp"
+            android:layout_width="226dp"
+            android:id="@+id/button"
+            motion:layout_constraintTop_toBottomOf="@+id/question1"
+            android:layout_marginTop="92dp"
+            motion:layout_constraintEnd_toEndOf="@+id/question1"
+            motion:layout_constraintStart_toStartOf="@+id/question1" />
+        <Constraint
+            android:layout_height="90dp"
+            android:layout_width="226dp"
+            android:id="@+id/button2"
+            motion:layout_editor_absoluteY="273dp"
+            motion:layout_editor_absoluteX="80dp" />
+        <Constraint
+            motion:layout_editor_absoluteY="389dp"
+            android:layout_height="90dp"
+            motion:layout_editor_absoluteX="80dp"
+            android:layout_width="226dp"
+            android:id="@+id/button3" />
+        <Constraint
+            android:layout_height="90dp"
+            android:layout_width="226dp"
+            android:id="@+id/btn_lose_weight"
+            motion:layout_constraintStart_toStartOf="@+id/btn_gain_weight"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_gain_weight"
+            android:layout_marginTop="32dp"
+            motion:layout_constraintEnd_toEndOf="@+id/btn_gain_weight" />
+        <Constraint
+            android:layout_height="90dp"
+            android:layout_width="226dp"
+            android:id="@+id/btn_gain_weight"
+            motion:layout_constraintEnd_toEndOf="@+id/title1"
+            motion:layout_constraintStart_toStartOf="@+id/title1"
+            motion:layout_constraintTop_toBottomOf="@+id/title1"
+            android:layout_marginTop="32dp" />
+        <Constraint
+            android:layout_height="109dp"
+            android:layout_width="180dp"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_kelaminPria"
+            android:id="@+id/btn_kelaminWanita"
+            motion:layout_constraintStart_toStartOf="@+id/btn_kelaminPria"
+            motion:layout_constraintEnd_toEndOf="@+id/btn_kelaminPria"
+            android:layout_marginTop="40dp"
+            motion:layout_constraintHorizontal_bias="0.437"
+            motion:layout_editor_absoluteX="126dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/title2"
+            android:layout_marginTop="100dp"
+            motion:layout_constraintStart_toStartOf="@+id/question1"
+            android:layout_marginStart="32dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/title2"
+            android:id="@+id/question2"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintStart_toStartOf="@+id/title2"
+            motion:layout_constraintEnd_toEndOf="@+id/title2" />
+        <Constraint
+            android:layout_height="100dp"
+            android:layout_width="180dp"
+            android:id="@+id/btn_kelaminPria"
+            motion:layout_constraintTop_toBottomOf="@+id/question2"
+            motion:layout_constraintStart_toStartOf="@+id/question2"
+            motion:layout_constraintEnd_toEndOf="@+id/question2"
+            android:layout_marginTop="28dp"
+            motion:layout_constraintHorizontal_bias="0.557"
+            motion:layout_editor_absoluteX="119dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/title3"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="@+id/question1"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="32dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/question3"
+            motion:layout_constraintTop_toBottomOf="@+id/title3"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintStart_toStartOf="@+id/title3"
+            motion:layout_constraintEnd_toEndOf="@+id/title3" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/question4"
+            motion:layout_constraintTop_toBottomOf="@+id/title4"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintStart_toStartOf="@+id/title4"
+            motion:layout_constraintEnd_toEndOf="@+id/title4" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/title4"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="100dp"
+            motion:layout_constraintStart_toEndOf="parent"
+            android:layout_marginStart="64dp" />
+        <Constraint
+            motion:layout_constraintTop_toBottomOf="@+id/question4"
+            android:id="@+id/plain_text_input"
+            motion:layout_constraintEnd_toEndOf="@+id/question4"
+            motion:layout_constraintStart_toStartOf="@+id/question4"
+            android:layout_marginTop="56dp"
+            motion:layout_constraintHorizontal_bias="0.0" />
+        <Constraint
+            android:id="@+id/input_height"
+            android:layout_width="93dp"
+            android:layout_height="50dp"
+            motion:layout_constraintTop_toBottomOf="@+id/question4"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintStart_toStartOf="@+id/question4"
+            motion:layout_constraintEnd_toEndOf="@+id/question4" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_tinggi"
+            motion:layout_constraintTop_toBottomOf="@+id/input_height"
+            android:layout_marginTop="54dp"
+            motion:layout_constraintStart_toStartOf="@+id/input_height"
+            motion:layout_constraintEnd_toEndOf="@+id/input_height" />
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title5"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="100dp"
+            motion:layout_constraintStart_toStartOf="@+id/title2"
+            android:layout_marginStart="32dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/title5"
+            android:id="@+id/question5"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintStart_toStartOf="@+id/title5"
+            motion:layout_constraintEnd_toEndOf="@+id/title5" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_beratBadan"
+            motion:layout_constraintTop_toBottomOf="@+id/et_beratBadan"
+            android:layout_marginTop="52dp"
+            motion:layout_constraintStart_toStartOf="@+id/et_beratBadan"
+            motion:layout_constraintEnd_toEndOf="@+id/et_beratBadan"
+            motion:layout_constraintHorizontal_bias="0.636" />
+        <Constraint
+            android:layout_height="59dp"
+            motion:layout_constraintEnd_toEndOf="@+id/question5"
+            android:layout_width="81dp"
+            android:id="@+id/et_beratBadan"
+            motion:layout_constraintStart_toStartOf="@+id/question5"
+            motion:layout_constraintTop_toBottomOf="@+id/question5"
+            android:layout_marginTop="48dp" />
+        <Constraint
+            motion:layout_editor_absoluteY="304dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintStart_toEndOf="parent"
+            android:id="@+id/question6" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/title6"
+            android:layout_marginTop="100dp"
+            motion:layout_constraintStart_toStartOf="@+id/question1"
+            android:layout_marginStart="200dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_cukupAktif"
+            motion:layout_constraintEnd_toEndOf="@+id/btn_sedikitAktif"
+            motion:layout_constraintStart_toStartOf="@+id/btn_sedikitAktif"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_sedikitAktif"
+            android:layout_marginTop="50dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_aktifitas1"
+            motion:layout_constraintTop_toBottomOf="@+id/title6"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintEnd_toEndOf="@+id/title6"
+            motion:layout_constraintStart_toStartOf="@+id/title6" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_ekstraAktif"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_sangatAktif"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintStart_toStartOf="@+id/btn_sangatAktif"
+            motion:layout_constraintEnd_toEndOf="@+id/btn_sangatAktif" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_sangatAktif"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_cukupAktif"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintStart_toStartOf="@+id/btn_cukupAktif"
+            motion:layout_constraintEnd_toEndOf="@+id/btn_cukupAktif"
+            motion:layout_constraintHorizontal_bias="0.0" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_sedikitAktif"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_aktifitas1"
+            motion:layout_constraintEnd_toEndOf="@+id/btn_aktifitas1"
+            motion:layout_constraintStart_toStartOf="@+id/btn_aktifitas1"
+            android:layout_marginTop="50dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/title7"
+            android:layout_marginTop="100dp"
+            motion:layout_constraintStart_toEndOf="parent"
+            android:layout_marginStart="32dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/title7"
+            android:id="@+id/question7"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintStart_toStartOf="@+id/title7"
+            motion:layout_constraintEnd_toEndOf="@+id/title7"
+            android:layout_marginStart="32dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_fast"
+            motion:layout_constraintEnd_toEndOf="@+id/btn_normal"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_normal"
+            motion:layout_constraintStart_toStartOf="@+id/btn_normal"
+            android:layout_marginTop="50dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_slow"
+            motion:layout_constraintEnd_toEndOf="@+id/question7"
+            motion:layout_constraintStart_toStartOf="@+id/question7"
+            motion:layout_constraintHorizontal_bias="0.46"
+            motion:layout_constraintTop_toBottomOf="@+id/question7"
+            android:layout_marginTop="50dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_normal"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_slow"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintEnd_toEndOf="@+id/btn_slow"
+            motion:layout_constraintStart_toStartOf="@+id/btn_slow" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="100dp"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/question1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="@+id/title1"
+            motion:layout_constraintTop_toBottomOf="@+id/title1"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintEnd_toEndOf="@+id/title1" />
+        <Constraint
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteY="501dp"
+            motion:layout_constraintStart_toStartOf="@+id/question1"
+            motion:layout_constraintEnd_toEndOf="@+id/question1" />
+        <Constraint
+            android:id="@+id/button2"
+            android:layout_width="217dp"
+            android:layout_height="72dp"
+            motion:layout_constraintStart_toStartOf="@+id/button"
+            motion:layout_constraintEnd_toEndOf="@+id/button"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintTop_toBottomOf="@+id/button"
+            android:layout_marginTop="32dp" />
+        <Constraint
+            android:id="@+id/input1"
+            motion:layout_constraintEnd_toStartOf="@+id/input2"
+            motion:layout_constraintStart_toEndOf="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="4dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp" >
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/input2"
+            motion:layout_constraintEnd_toStartOf="@+id/input7"
+            motion:layout_constraintStart_toEndOf="@+id/input1"
+            android:layout_width="30dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp" >
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/input3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/input4"
+            android:layout_width="30dp"
+            android:layout_height="11dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp" />
+        <Constraint
+            android:id="@+id/input4"
+            motion:layout_constraintEnd_toStartOf="@+id/input3"
+            motion:layout_constraintStart_toEndOf="@+id/input5"
+            android:layout_width="30dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp" />
+        <Constraint
+            android:id="@+id/input5"
+            motion:layout_constraintEnd_toStartOf="@+id/input4"
+            motion:layout_constraintStart_toEndOf="@+id/input6"
+            android:layout_width="30dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp" />
+        <Constraint
+            android:id="@+id/input6"
+            motion:layout_constraintEnd_toStartOf="@+id/input5"
+            motion:layout_constraintStart_toEndOf="@+id/input7"
+            android:layout_width="30dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp" />
+        <Constraint
+            android:id="@+id/input7"
+            motion:layout_constraintEnd_toStartOf="@+id/input6"
+            motion:layout_constraintStart_toEndOf="@+id/input2"
+            android:layout_width="30dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp" />
+        <Constraint
+            android:id="@+id/iv_back"
+            android:layout_width="71dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="4dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="4dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_lose_weight"
+            motion:layout_constraintStart_toStartOf="@+id/btn_gain_weight"
+            motion:layout_constraintEnd_toEndOf="@+id/btn_gain_weight"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_gain_weight"
+            motion:layout_editor_absoluteY="347dp"
+            android:layout_marginTop="50dp" />
+        <Constraint
+            android:layout_height="57dp"
+            android:layout_width="182dp"
+            android:id="@+id/btn_gain_weight"
+            motion:layout_constraintStart_toStartOf="@+id/question1"
+            motion:layout_constraintEnd_toEndOf="@+id/question1"
+            motion:layout_constraintTop_toBottomOf="@+id/question1"
+            android:layout_marginTop="50dp"
+            motion:layout_editor_absoluteX="120dp" />
+        <Constraint
+            motion:layout_editor_absoluteY="304dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintEnd_toEndOf="@+id/title7"
+            android:layout_width="wrap_content"
+            android:id="@+id/question7"
+            android:layout_marginStart="32dp" />
+    </ConstraintSet>
+    <ConstraintSet
+        android:id="@+id/input2"
+        motion:deriveConstraintsFrom="@+id/end" >
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/title1"
+            motion:layout_constraintEnd_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/title2"
+            android:layout_width="197dp"
+            android:layout_height="36dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="100dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:layout_height="100dp"
+            android:layout_width="180dp"
+            android:id="@+id/btn_kelaminWanita"
+            motion:layout_constraintStart_toStartOf="@+id/btn_kelaminPria"
+            motion:layout_constraintEnd_toEndOf="@+id/btn_kelaminPria"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_kelaminPria"
+            android:layout_marginTop="61dp" />
+        <Constraint
+            android:layout_height="100dp"
+            android:layout_width="180dp"
+            android:id="@+id/btn_kelaminPria"
+            motion:layout_constraintStart_toStartOf="@+id/question2"
+            motion:layout_constraintTop_toBottomOf="@+id/question2"
+            android:layout_marginTop="60dp"
+            motion:layout_constraintEnd_toEndOf="@+id/question2" />
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/question2"
+            motion:layout_constraintStart_toStartOf="@+id/title2"
+            motion:layout_constraintEnd_toEndOf="@+id/title2"
+            motion:layout_constraintTop_toBottomOf="@+id/title2"
+            motion:layout_editor_absoluteY="304dp"
+            android:layout_marginTop="50dp" />
+        <Constraint
+            android:id="@+id/input2"
+            motion:layout_constraintEnd_toStartOf="@+id/input7"
+            motion:layout_constraintStart_toEndOf="@+id/input1"
+            android:layout_width="30dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
+        </Constraint>
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/end"
+        motion:constraintSetEnd="@+id/input2" >
+        <OnClick motion:clickAction="transitionToEnd" />
+    </Transition>
+    <ConstraintSet
+        android:id="@+id/input3"
+        motion:deriveConstraintsFrom="@+id/input2" >
+        <Constraint
+            android:layout_height="36dp"
+            android:layout_marginTop="100dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_width="197dp"
+            android:id="@+id/title2"
+            motion:layout_constraintEnd_toStartOf="parent"
+            android:layout_marginEnd="32dp" />
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title3"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="100dp"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/question3"
+            motion:layout_constraintTop_toBottomOf="@+id/title3"
+            motion:layout_constraintEnd_toEndOf="@+id/title3"
+            motion:layout_constraintStart_toStartOf="@+id/title3"
+            android:layout_marginTop="50dp" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/input2"
+        motion:constraintSetEnd="@+id/input3" />
+    <ConstraintSet
+        android:id="@+id/input4"
+        motion:deriveConstraintsFrom="@+id/input3" >
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/title3"
+            motion:layout_constraintTop_toBottomOf="@+id/input1"
+            android:layout_marginTop="100dp"
+            motion:layout_constraintEnd_toStartOf="parent"
+            android:layout_marginEnd="64dp" />
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title4"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="100dp"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/question4"
+            motion:layout_constraintTop_toBottomOf="@+id/title4"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintStart_toStartOf="@+id/title4"
+            motion:layout_constraintEnd_toEndOf="@+id/title4" />
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_tinggi"
+            motion:layout_constraintStart_toStartOf="@+id/input_height"
+            motion:layout_constraintEnd_toEndOf="@+id/input_height"
+            motion:layout_constraintTop_toBottomOf="@+id/input_height"
+            android:layout_marginTop="50dp" />
+        <Constraint
+            android:layout_width="121dp"
+            android:layout_height="48dp"
+            android:id="@+id/input_height"
+            motion:layout_constraintStart_toStartOf="@+id/question4"
+            motion:layout_constraintTop_toBottomOf="@+id/question4"
+            motion:layout_constraintEnd_toEndOf="@+id/question4"
+            android:layout_marginTop="56dp"
+            motion:layout_constraintHorizontal_bias="0.494" />
+    </ConstraintSet>
+    <ConstraintSet
+        android:id="@+id/input5"
+        motion:deriveConstraintsFrom="@+id/input4" >
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/title4"
+            motion:layout_constraintEnd_toStartOf="parent" />
+        <Constraint
+            android:layout_height="23dp"
+            android:layout_width="112dp"
+            android:id="@+id/title5"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="144dp"
+            android:layout_marginTop="100dp"
+            motion:layout_constraintStart_toEndOf="@+id/title1" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/question5"
+            motion:layout_constraintTop_toBottomOf="@+id/title5"
+            motion:layout_constraintStart_toStartOf="@+id/title5"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintEnd_toEndOf="@+id/title5" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_beratBadan"
+            motion:layout_constraintTop_toBottomOf="@+id/et_beratBadan"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintEnd_toEndOf="@+id/et_beratBadan"
+            motion:layout_constraintStart_toStartOf="@+id/et_beratBadan" />
+        <Constraint
+            android:layout_width="119dp"
+            android:layout_height="64dp"
+            android:id="@+id/et_beratBadan"
+            motion:layout_constraintEnd_toEndOf="@+id/question5"
+            motion:layout_constraintTop_toBottomOf="@+id/question5"
+            android:layout_marginTop="60dp"
+            motion:layout_constraintStart_toStartOf="@+id/question5"
+            motion:layout_editor_absoluteX="146dp" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/input3"
+        motion:constraintSetEnd="@+id/input4" />
+    <Transition
+        motion:constraintSetStart="@+id/input4"
+        motion:constraintSetEnd="@+id/input5" />
+    <ConstraintSet
+        android:id="@+id/input6"
+        motion:deriveConstraintsFrom="@+id/input5" >
+        <Constraint
+            android:layout_height="23dp"
+            android:layout_marginTop="100dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintEnd_toEndOf="@+id/title2"
+            android:layout_width="112dp"
+            android:id="@+id/title5" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/title6"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="100dp"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/question6"
+            motion:layout_constraintEnd_toEndOf="@+id/title6"
+            motion:layout_constraintTop_toBottomOf="@+id/title6"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintStart_toStartOf="@+id/title6" />
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_aktifitas1"
+            motion:layout_constraintStart_toStartOf="@+id/question6"
+            motion:layout_constraintEnd_toEndOf="@+id/question6"
+            motion:layout_constraintTop_toBottomOf="@+id/question6"
+            android:layout_marginTop="50dp" />
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_sedikitAktif"
+            motion:layout_constraintStart_toStartOf="@+id/btn_aktifitas1"
+            motion:layout_constraintEnd_toEndOf="@+id/btn_aktifitas1"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_aktifitas1"
+            android:layout_marginTop="50dp" />
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_cukupAktif"
+            motion:layout_constraintStart_toStartOf="@+id/btn_sedikitAktif"
+            motion:layout_constraintEnd_toEndOf="@+id/btn_sedikitAktif"
+            motion:layout_constraintHorizontal_bias="1.0"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_sedikitAktif"
+            android:layout_marginTop="50dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_sangatAktif"
+            motion:layout_constraintStart_toStartOf="@+id/btn_cukupAktif"
+            motion:layout_constraintEnd_toEndOf="@+id/btn_cukupAktif"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_cukupAktif"
+            android:layout_marginTop="50dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_ekstraAktif"
+            motion:layout_constraintStart_toStartOf="@+id/btn_sangatAktif"
+            motion:layout_constraintEnd_toEndOf="@+id/btn_sangatAktif"
+            motion:layout_constraintHorizontal_bias="0.363"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_sangatAktif"
+            android:layout_marginTop="50dp" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/input5"
+        motion:constraintSetEnd="@+id/input6" />
+    <ConstraintSet android:id="@+id/input7" />
+    <Transition
+        motion:constraintSetStart="@+id/input6"
+        motion:constraintSetEnd="@+id/input7" />
+</MotionScene>

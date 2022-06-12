@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboarding.Onboarding1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input1"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_rectangle_full"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input2"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input7"
+        app:layout_constraintStart_toEndOf="@+id/input1"
+        app:layout_constraintTop_toTopOf="@+id/input1"
+        app:srcCompat="@drawable/ic_rectangle"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input3"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input4"
+        app:layout_constraintTop_toTopOf="@+id/input4"
+        app:srcCompat="@drawable/ic_rectangle"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input4"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input3"
+        app:layout_constraintStart_toEndOf="@+id/input5"
+        app:layout_constraintTop_toTopOf="@+id/input5"
+        app:srcCompat="@drawable/ic_rectangle"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input5"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input4"
+        app:layout_constraintStart_toEndOf="@+id/input6"
+        app:layout_constraintTop_toTopOf="@+id/input6"
+        app:srcCompat="@drawable/ic_rectangle"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input6"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input5"
+        app:layout_constraintStart_toEndOf="@+id/input7"
+        app:layout_constraintTop_toTopOf="@+id/input7"
+        app:srcCompat="@drawable/ic_rectangle"
+        app:tint="@color/hijau" />
+
+    <Button
+        android:id="@+id/btn_loseWeight"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_onboarding_1b"
+        android:fontFamily="@font/robotoregular"
+        android:text="Menurunkan Berat badan"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/question1"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/question1"
+        app:layout_constraintTop_toBottomOf="@+id/question1"
+        app:strokeColor="@color/abuabu_2"
+        app:strokeWidth="1dp" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input7"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input6"
+        app:layout_constraintStart_toEndOf="@+id/input2"
+        app:layout_constraintTop_toTopOf="@+id/input2"
+        app:srcCompat="@drawable/ic_rectangle"
+        app:tint="@color/hijau" />
+
+
+    <Button
+        android:id="@+id/btn_gainWeight"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:drawableLeft="@drawable/ic_onboarding_1a"
+        android:fontFamily="@font/robotoregular"
+        android:text="Menambah Berat Badan"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:theme="@style/ButtonOnboarding"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_loseWeight"
+        app:layout_constraintStart_toStartOf="@+id/btn_loseWeight"
+        app:layout_constraintTop_toBottomOf="@+id/btn_loseWeight"
+        app:strokeColor="@color/abuabu_2"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/question1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/proza_libre"
+        android:text="Apa tujuan tubuh ideal kamu?"
+        android:textStyle="bold"
+        android:textColor="@color/hitam"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/title1"
+        app:layout_constraintStart_toStartOf="@+id/title1"
+        app:layout_constraintTop_toBottomOf="@+id/title1" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/opensansmedium"
+        android:gravity="center"
+        android:text="@string/tv_onboarding_pesan"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_loseWeight"
+        app:layout_constraintStart_toStartOf="@+id/question1" />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/proza_libre"
+        android:gravity="center"
+        android:text="Kenalan dulu yuk"
+        android:textColor="#B3000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input7" />
+</androidx.constraintlayout.widget.ConstraintLayout>

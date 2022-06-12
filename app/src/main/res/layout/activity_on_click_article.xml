@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#047BA8"
+    tools:context=".ui.home.OnClickArticleActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_BackArticle"
+                android:layout_width="47dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/effect_ripple"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearance="@style/roundimageviewRipple"
+                app:srcCompat="@drawable/ic_back"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_tittleArticle"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Diet IU Efektif Ga Sih menurut kalian semua  saudara-saudara?"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/iv_imgArticle"
+                app:layout_constraintStart_toStartOf="@+id/iv_imgArticle"
+                app:layout_constraintTop_toTopOf="@+id/iv_BackArticle" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_imgArticle"
+                android:layout_width="340dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="37dp"
+                android:background="@drawable/bg_corner_image"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tittleArticle"
+                app:shapeAppearance="@style/roundimageview3"
+                app:srcCompat="@drawable/img_test_rv" />
+
+            <TextView
+                android:id="@+id/tv_bodyArticle"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/opensansmedium"
+                android:text="Lörem ipsum multid fafavis coronahälsning. Modemkapare Linnéa Olofsson. Sel nadevarade för att gångpeng. Lörtad stereologi. Viagra Ingvar Isaksson.
+Porar traning, Lars Blom i drop shipping. Flöde kafassa karyrad om Anders Berglund spetenat. Beng Eva Isaksson. Hypergen askbränd i natobel gångfartsgata. Krofår becknarväska.
+
+Viktig häris nisade. Arvid Axelsson valpromenera Agnes Holm innan David Mattsson. Micro-moments multihäre. Rohylig Johan Isaksson medan kärutese desitet i rev. Dan Norberg kätore.
+
+Kristina Ekström tragt elektroplastisk, vikynade, reass. Sudoku ruse syprebel än pudoligen. Analiga belig påspevis. Åsa Nyström minabelt nåska misomodern, rere. Lir gurlesk. "
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/iv_imgArticle"
+                app:layout_constraintStart_toStartOf="@+id/iv_imgArticle"
+                app:layout_constraintTop_toBottomOf="@+id/iv_imgArticle" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/proza_libre"
+                android:text="Similar Topics"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tv_bodyArticle"
+                app:layout_constraintTop_toBottomOf="@+id/tv_bodyArticle" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView28"
+                tools:listitem="@layout/rv_article">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

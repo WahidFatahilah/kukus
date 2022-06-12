@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.scan.ScanActivity"
+    android:clickable="true"
+    android:focusable="true">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_backCamera"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/effect_ripple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/roundimageviewRipple"
+        app:srcCompat="@drawable/ic_back"
+        app:tint="@color/black" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_preview"
+        android:layout_width="280dp"
+        android:layout_height="290dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_tittleMakanan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_preview"
+        android:scaleType="fitXY"
+        app:shapeAppearance="@style/roundimageview3"/>
+
+    <TextView
+        android:id="@+id/tv_tittleMakanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensansmedium"
+        android:text="Nama makanan:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/iv_preview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_foodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/prozalibrebold"
+        android:text=""
+        android:textColor="@color/hijau"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_tittleMakanan"
+        app:layout_constraintTop_toTopOf="@+id/tv_tittleMakanan" />
+
+    <TextView
+        android:id="@+id/tv_tittleKalori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/opensansmedium"
+        android:text="Jumlah kalori:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_tittleMakanan"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tittleMakanan" />
+
+    <TextView
+        android:id="@+id/tv_totalCalorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/prozalibrebold"
+        android:text=""
+        android:textColor="@color/hijau"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_foodName"
+        app:layout_constraintTop_toTopOf="@+id/tv_tittleKalori" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_gallery"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/effect_ripple"
+        app:layout_constraintStart_toStartOf="@+id/btn_upload"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tittleKalori"
+        app:shapeAppearance="@style/roundimageviewRipple"
+        app:srcCompat="@drawable/ic_scan_gallery" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Galeri"
+        app:layout_constraintEnd_toEndOf="@+id/iv_gallery"
+        app:layout_constraintStart_toStartOf="@+id/iv_gallery"
+        app:layout_constraintTop_toBottomOf="@+id/iv_gallery" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_add"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_camera"
+        app:layout_constraintStart_toEndOf="@+id/iv_gallery"
+        app:layout_constraintTop_toTopOf="@+id/iv_camera"
+        app:srcCompat="@drawable/ic_scan_add"
+        app:shapeAppearance="@style/roundimageviewRipple"
+        android:background="@drawable/effect_ripple"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv_Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Tambah ke diary"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/iv_add"
+        app:layout_constraintStart_toStartOf="@+id/iv_add"
+        app:layout_constraintTop_toBottomOf="@+id/iv_add" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_camera"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/effect_ripple"
+        app:layout_constraintEnd_toEndOf="@+id/btn_upload"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tittleKalori"
+        app:shapeAppearance="@style/roundimageviewRipple"
+        app:srcCompat="@drawable/ic_scan_camera" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Kamera"
+        app:layout_constraintEnd_toEndOf="@+id/iv_camera"
+        app:layout_constraintStart_toStartOf="@+id/iv_camera"
+        app:layout_constraintTop_toBottomOf="@+id/iv_camera" />
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="Unggah"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iv_preview"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/iv_preview"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar_scan" />
+
+    <LinearLayout
+        android:id="@+id/progressBar_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/tv_Add"
+        app:layout_constraintStart_toStartOf="@+id/tv_Add"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Add">
+
+        <ProgressBar
+            android:id="@+id/progressBar_scan_circle"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/hijau"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Sedang Memproses"
+            app:layout_constraintEnd_toEndOf="@+id/iv_gallery"
+            app:layout_constraintStart_toStartOf="@+id/iv_gallery"
+            app:layout_constraintTop_toBottomOf="@+id/iv_gallery" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

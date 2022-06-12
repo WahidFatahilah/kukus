@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboarding.Onboarding4">
+
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/proza_libre"
+        android:text="Yuk lanjut"
+        app:shapeAppearance="@style/roundimageviewRipple"
+        android:textColor="#B3000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input7" />
+
+    <TextView
+        android:id="@+id/question4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/proza_libre"
+        android:text="Berapa Tinggi Kamu ?"
+        android:textColor="@color/hitam"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/title4"
+        app:layout_constraintStart_toStartOf="@+id/title4"
+        app:layout_constraintTop_toBottomOf="@+id/title4" />
+
+
+    <Button
+        android:id="@+id/btn_tinggi"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="lanjut"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="@+id/question4"
+        app:layout_constraintStart_toStartOf="@+id/question4" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/opensansmedium"
+        android:gravity="bottom"
+        android:text="cm"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_tinggi"
+        app:layout_constraintStart_toEndOf="@+id/et_tinggi"
+        app:layout_constraintTop_toTopOf="@+id/et_tinggi" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input1"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="26dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input2"
+        app:layout_constraintStart_toEndOf="@+id/iv_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_rectangle_full"
+        app:tint="@color/hijau" />
+
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input2"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input7"
+        app:layout_constraintStart_toEndOf="@+id/input1"
+        app:layout_constraintTop_toTopOf="@+id/input1"
+        app:srcCompat="@drawable/ic_rectangle_full"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input3"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input4"
+        app:layout_constraintTop_toTopOf="@+id/input4"
+        app:srcCompat="@drawable/ic_rectangle"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input4"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input3"
+        app:layout_constraintStart_toEndOf="@+id/input5"
+        app:layout_constraintTop_toTopOf="@+id/input5"
+        app:srcCompat="@drawable/ic_rectangle"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input5"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input4"
+        app:layout_constraintStart_toEndOf="@+id/input6"
+        app:layout_constraintTop_toTopOf="@+id/input6"
+        app:srcCompat="@drawable/ic_rectangle"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input6"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input5"
+        app:layout_constraintStart_toEndOf="@+id/input7"
+        app:layout_constraintTop_toTopOf="@+id/input7"
+        app:srcCompat="@drawable/ic_rectangle_full"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input7"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input6"
+        app:layout_constraintStart_toEndOf="@+id/input2"
+        app:layout_constraintTop_toTopOf="@+id/input2"
+        app:srcCompat="@drawable/ic_rectangle_full"
+        app:tint="@color/hijau" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/effect_ripple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back"
+        app:tint="@color/hijau" />
+
+    <EditText
+        android:id="@+id/et_tinggi"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="224dp"
+        android:ems="10"
+        android:fontFamily="@font/opensansmedium"
+        android:gravity="center"
+        android:hint="Masukkan Tinggi"
+        android:inputType="number"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/btn_tinggi"
+        app:layout_constraintTop_toBottomOf="@+id/question4" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/opensansmedium"
+        android:gravity="center"
+        android:text="@string/tv_onboarding_pesan"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

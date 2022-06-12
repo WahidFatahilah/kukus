@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="140dp"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_article"
+            android:layout_width="160dp"
+            android:layout_height="110dp"
+            android:background="@drawable/img_test_rv"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/roundimageview3" />
+
+        <TextView
+            android:id="@+id/tv_rvArticle"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/opensansmedium"
+            android:text="Cerita JessicaJane mencoba diet jennie selama 24 jam"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_article"
+            app:layout_constraintStart_toEndOf="@+id/img_article"
+            app:layout_constraintTop_toTopOf="@+id/img_article" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

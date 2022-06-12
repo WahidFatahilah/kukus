@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/onboarding1">
+
+    <fragment
+        android:id="@+id/onboarding1"
+        android:name="com.bangkit.kukus.onboarding.Onboarding1"
+        android:label="fragment_onboarding1"
+        tools:layout="@layout/fragment_onboarding1" >
+        <action
+            android:id="@+id/action_onboarding1_to_onboarding2"
+            app:destination="@id/onboarding2" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding2"
+        android:name="com.bangkit.kukus.onboarding.Onboarding2"
+        android:label="fragment_onboarding2"
+        tools:layout="@layout/fragment_onboarding2" >
+        <action
+            android:id="@+id/action_onboarding2_to_onboarding3"
+            app:destination="@id/onboarding3" />
+        <action
+            android:id="@+id/action_onboarding2_to_onboarding1"
+            app:destination="@id/onboarding1" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding7"
+        android:name="com.bangkit.kukus.onboarding.Onboarding7"
+        android:label="fragment_onboarding7"
+        tools:layout="@layout/fragment_onboarding7" >
+        <action
+            android:id="@+id/action_onboarding7_to_onboarding6"
+            app:destination="@id/onboarding6" />
+        <action
+            android:id="@+id/action_onboarding7_to_finalActivity"
+            app:destination="@id/finalActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding3"
+        android:name="com.bangkit.kukus.onboarding.Onboarding3"
+        android:label="  fragment_onboarding3"
+        tools:layout="@layout/fragment_onboarding3" >
+        <action
+            android:id="@+id/action_onboarding3_to_onboarding2"
+            app:destination="@id/onboarding2" />
+        <action
+            android:id="@+id/action_onboarding3_to_onboarding4"
+            app:destination="@id/onboarding4" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding4"
+        android:name="com.bangkit.kukus.onboarding.Onboarding4"
+        android:label="fragment_onboarding4"
+        tools:layout="@layout/fragment_onboarding4" >
+        <action
+            android:id="@+id/action_onboarding4_to_onboarding5"
+            app:destination="@id/onboarding5" />
+        <action
+            android:id="@+id/action_onboarding4_to_onboarding3"
+            app:destination="@id/onboarding3" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding5"
+        android:name="com.bangkit.kukus.onboarding.Onboarding5"
+        android:label="fragment_onboarding5"
+        tools:layout="@layout/fragment_onboarding5" >
+        <action
+            android:id="@+id/action_onboarding5_to_onboarding6"
+            app:destination="@id/onboarding6" />
+        <action
+            android:id="@+id/action_onboarding5_to_onboarding4"
+            app:destination="@id/onboarding4" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding6"
+        android:name="com.bangkit.kukus.onboarding.Onboarding6"
+        android:label="fragment_onboarding6"
+        tools:layout="@layout/fragment_onboarding6" >
+        <action
+            android:id="@+id/action_onboarding6_to_onboarding7"
+            app:destination="@id/onboarding7" />
+        <action
+            android:id="@+id/action_onboarding6_to_onboarding5"
+            app:destination="@id/onboarding5" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.bangkit.kukus.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_onboarding1"
+            app:destination="@id/onboarding1" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.bangkit.kukus.ui.register.RegisterFragment"
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/finalActivity"
+        android:name="com.bangkit.kukus.onboarding.FinalActivity"
+        android:label="activity_final"
+        tools:layout="@layout/activity_final" />
+</navigation>

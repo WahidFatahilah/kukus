@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.bangkit.kukus.ui.home.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment2_to_exploreFragment2"
+            app:destination="@id/exploreFragment" />
+        <action
+            android:id="@+id/action_mainFragment2_to_scanActivity"
+            app:destination="@id/scanActivity" />
+        <action
+            android:id="@+id/action_mainFragment2_to_fragmentProfile"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diaryFragment"
+        android:name="com.bangkit.kukus.ui.diary.DiaryFragment"
+        android:label="fragment_diary"
+        tools:layout="@layout/fragment_diary" >
+        <action
+            android:id="@+id/action_diaryFragment2_to_scanActivity"
+            app:destination="@id/scanActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.bangkit.kukus.ui.explore.ExploreFragment"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore" >
+        <action
+            android:id="@+id/action_exploreFragment2_to_diaryFragment2"
+            app:destination="@id/diaryFragment" />
+        <action
+            android:id="@+id/action_exploreFragment2_to_scanActivity"
+            app:destination="@id/scanActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/scanActivity"
+        android:name="com.bangkit.kukus.ui.scan.ScanActivity"
+        android:label="activity_scan"
+        tools:layout="@layout/activity_scan" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.bangkit.kukus.ui.profile.FragmentProfile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_settingProfile"
+            app:destination="@id/settingProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingProfile"
+        android:name="com.bangkit.kukus.ui.profile.SettingProfile"
+        android:label="fragment_setting_profile"
+        tools:layout="@layout/fragment_setting_profile" >
+        <action
+            android:id="@+id/action_settingProfile_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+</navigation>

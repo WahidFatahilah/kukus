@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".onboarding.Onboarding7">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/opensansmedium"
+        android:gravity="center"
+        android:text="@string/tv_onboarding_pesan"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/title7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/proza_libre"
+        android:text="Oke ini yang terakhir ya"
+        android:textColor="#B3000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input7" />
+
+    <TextView
+        android:id="@+id/question7"
+        android:layout_width="360dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/proza_libre"
+        android:text="Seberapa cepat kamu ingin mencapai berat idealmu?"
+        android:textColor="@color/hitam"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/title7"
+        app:layout_constraintStart_toStartOf="@+id/title7"
+        app:layout_constraintTop_toBottomOf="@+id/title7" />
+
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input1"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="26dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input2"
+        app:layout_constraintStart_toEndOf="@+id/iv_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_rectangle_full"
+        app:tint="@color/hijau" />
+
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input2"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input7"
+        app:layout_constraintStart_toEndOf="@+id/input1"
+        app:layout_constraintTop_toTopOf="@+id/input1"
+        app:srcCompat="@drawable/ic_rectangle_full"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input3"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input4"
+        app:layout_constraintTop_toTopOf="@+id/input4"
+        app:srcCompat="@drawable/ic_rectangle_full"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input4"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input3"
+        app:layout_constraintStart_toEndOf="@+id/input5"
+        app:layout_constraintTop_toTopOf="@+id/input5"
+        app:srcCompat="@drawable/ic_rectangle_full"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input5"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input4"
+        app:layout_constraintStart_toEndOf="@+id/input6"
+        app:layout_constraintTop_toTopOf="@+id/input6"
+        app:srcCompat="@drawable/ic_rectangle_full"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input6"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input5"
+        app:layout_constraintStart_toEndOf="@+id/input7"
+        app:layout_constraintTop_toTopOf="@+id/input7"
+        app:srcCompat="@drawable/ic_rectangle_full"
+        app:tint="@color/hijau" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/input7"
+        android:layout_width="30dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="16dp"
+        app:altSrc="@drawable/ic_rectangle_full"
+        app:layout_constraintEnd_toStartOf="@+id/input6"
+        app:layout_constraintStart_toEndOf="@+id/input2"
+        app:layout_constraintTop_toTopOf="@+id/input2"
+        app:srcCompat="@drawable/ic_rectangle_full"
+        app:tint="@color/hijau" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_back"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="9dp"
+        app:shapeAppearance="@style/roundimageviewRipple"
+        android:background="@drawable/effect_ripple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back"
+        app:tint="@color/hijau" />
+
+    <Button
+        android:id="@+id/btn_prosesLambat"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="LAMBAT"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:theme="@style/ButtonOnboarding"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/question7"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/question7"
+        app:layout_constraintTop_toBottomOf="@+id/question7"
+        app:strokeColor="@color/abuabu_2"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/btn_prosesNormal"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="NORMAL"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:theme="@style/ButtonOnboarding"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/question7"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/question7"
+        app:layout_constraintTop_toBottomOf="@+id/btn_prosesLambat"
+        app:strokeColor="@color/abuabu_2"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/btn_prosesCepat"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="CEPAT"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:theme="@style/ButtonOnboarding"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/question7"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/question7"
+        app:layout_constraintTop_toBottomOf="@+id/btn_prosesNormal"
+        app:strokeColor="@color/abuabu_2"
+        app:strokeWidth="1dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
