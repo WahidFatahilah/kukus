@@ -68,18 +68,13 @@
 
     <EditText
         android:id="@+id/tv_username"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
         android:fontFamily="@font/opensansbold"
-        android:text="-"
+        android:text=""
         android:textColor="@color/black"
         android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_displayname"
         app:layout_constraintTop_toBottomOf="@+id/tv_displayname" />
 
 
@@ -91,9 +86,7 @@
         android:fontFamily="@font/opensansmedium"
         android:text="Diet Plan"
         android:textColor="#595959"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.017"
-        app:layout_constraintStart_toStartOf="@+id/tv_username"
+        app:layout_constraintStart_toStartOf="@+id/tv_displayname"
         app:layout_constraintTop_toBottomOf="@+id/tv_username" />
 
     <TextView
@@ -104,8 +97,6 @@
         android:text="Diet Plan"
         android:textColor="@color/black"
         android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="@+id/tv_dietplan"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tv_dietplan"
         app:layout_constraintTop_toBottomOf="@+id/tv_dietplan" />
 
@@ -130,23 +121,18 @@
         android:fontFamily="@font/opensansmedium"
         android:text="Email"
         android:textColor="#595959"
-        app:layout_constraintEnd_toEndOf="@+id/tv_dietplanuser"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tv_dietplanuser"
+        app:layout_constraintStart_toStartOf="@+id/tv_dietplan"
         app:layout_constraintTop_toBottomOf="@+id/tv_dietplanuser" />
 
     <EditText
         android:id="@+id/tv_emailuser"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
         android:fontFamily="@font/opensansbold"
-        android:text="-"
+        android:text=""
         android:textColor="@color/black"
         android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_email"
         app:layout_constraintTop_toBottomOf="@+id/tv_email" />
 
     <TextView
@@ -157,24 +143,19 @@
         android:fontFamily="@font/opensansmedium"
         android:text="Password"
         android:textColor="#595959"
-        app:layout_constraintEnd_toEndOf="@+id/tv_emailuser"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tv_emailuser"
+        app:layout_constraintStart_toStartOf="@+id/tv_email"
         app:layout_constraintTop_toBottomOf="@+id/tv_emailuser" />
 
     <EditText
         android:id="@+id/tv_passwordsetting"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
         android:fontFamily="@font/opensansbold"
         android:password="true"
         android:text=""
         android:textColor="@color/black"
         android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_passwordsettingtitle"
         app:layout_constraintTop_toBottomOf="@+id/tv_passwordsettingtitle" />
 
     <Button

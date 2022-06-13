@@ -68,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/opensansmedium"
-        android:text="Total Daily energy Expenditure (TDEE):"
+        android:text="Daily energy Expenditure (TDEE):"
         android:textColor="#4A4646"
         android:textSize="18sp" />
 

@@ -159,7 +159,7 @@
         android:layout_width="340dp"
         android:layout_height="60dp"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="26dp"
         android:fontFamily="@font/robotoregular"
         android:text="Unggah"
         android:textColor="@color/white"

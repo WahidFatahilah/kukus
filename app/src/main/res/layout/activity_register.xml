@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context=".ui.register.RegisterActivity">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,8 +27,6 @@
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/iv_register"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_register" />
 
@@ -108,7 +106,9 @@
         android:background="@drawable/bg_btn_loginregisteronboarding"
         android:fontFamily="@font/robotoregular"
         android:text="@string/btn_register"
-        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:theme="@style/TemaButton"
         app:layout_constraintEnd_toEndOf="@+id/et_passwordRegister"
         app:layout_constraintHorizontal_bias="0.503"
@@ -119,14 +119,13 @@
         android:id="@+id/tv_haveAnAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/opensansmedium"
         android:text="@string/tv_have_an_account"
         android:textColor="#9C9C9C"
         android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/tv_registerHighlined"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/btn_register"
         app:layout_constraintTop_toBottomOf="@+id/btn_register" />
 
@@ -134,14 +133,16 @@
         android:id="@+id/tv_registerHighlined"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginStart="6dp"
         android:fontFamily="@font/opensansmedium"
         android:text="@string/login"
-        android:textColor="#000000"
+        android:textColor="#217CC5"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/btn_register"
-        app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_haveAnAccount"
+        app:layout_constraintStart_toEndOf="@+id/tv_haveAnAccount"
+        app:layout_constraintTop_toTopOf="@+id/tv_haveAnAccount"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

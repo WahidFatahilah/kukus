@@ -2,16 +2,15 @@ package com.bangkit.kukus.ui.home
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import com.bangkit.kukus.R
 import com.bangkit.kukus.databinding.FragmentMainContentBinding
 import com.bangkit.kukus.helper.DummyRvHome
 import com.bangkit.kukus.preference.Constant
-import com.bangkit.kukus.preference.Utils
 import com.bangkit.kukus.preference.Utils.getPreferenceInt
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener

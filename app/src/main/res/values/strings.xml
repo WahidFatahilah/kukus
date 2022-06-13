@@ -14,9 +14,9 @@
     <string name="tv_password_register">Password</string>
     <string name="et_password_register">Masukkan Passwordmu Disini</string>
     <string name="btn_register">Daftar</string>
-    <string name="tv_have_an_account">Sudah Punya Akun ?</string>
+    <string name="tv_have_an_account">Sudah punya akun?</string>
     <string name="login">Masuk</string>
-    <string name="et_name_register">Masukkan Nama Kamu Disini</string>
+    <string name="et_name_register">Masukkan Namamu Disini</string>
     <string name="tv_name_register">Nama</string>
 
     //Login Page
@@ -26,8 +26,8 @@
     <string name="tv_password_login">Password</string>
     <string name="et_password_login">Masukkan Passwordmu Disini</string>
     <string name="btn_login">Masuk</string>
-    <string name="tv_dontHaveAnAccount">BELUM PUNYA AKUN ?</string>
-    <string name="tv_login_highlined">DAFTAR</string>
+    <string name="tv_dontHaveAnAccount">Belum punya akun?</string>
+    <string name="tv_login_highlined">Daftar</string>
 
     //OnClickedHealthyFoodRecomActivity
     <string name="iv_tittleResepMakanan">Kentang keju brokoli</string>

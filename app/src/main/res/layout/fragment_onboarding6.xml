@@ -52,7 +52,7 @@
         android:id="@+id/btn_aktifitas1"
         android:layout_width="280dp"
         android:layout_height="70dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/robotoregular"
         android:text="MENETAP"
         android:textColor="@color/black"

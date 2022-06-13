@@ -75,17 +75,15 @@
         app:tint="@color/orange" />
 
 
-
     <!-- Onboarding 1 -->
 
     <ImageView
         android:id="@+id/img_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/img_onboarding1"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        app:srcCompat="@drawable/img_onboarding1" />
 
     <TextView
         android:id="@+id/tv_title1"
@@ -105,6 +103,8 @@
         android:id="@+id/tv_body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:fontFamily="@font/opensansmedium"
         android:gravity="center"
         android:text="Aplikasi yang membantu anda untuk menerapkan gaya hidup sehat"
@@ -133,7 +133,7 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="@+id/img_2"
         app:layout_constraintStart_toStartOf="@+id/img_2"
-        app:layout_constraintTop_toBottomOf="@+id/img_2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 
     <!-- Onboarding 3 -->
@@ -142,6 +142,8 @@
         android:id="@+id/tv_body2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:fontFamily="@font/opensansmedium"
         android:gravity="center"
         android:text="Anda dapat mengetahui jumlah kalori pada makanan dengan mudah "
@@ -183,6 +185,8 @@
         android:id="@+id/tv_body3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:fontFamily="@font/opensansmedium"
         android:gravity="center"
         android:text="Anda dapat berbagi pengalaman seputar diet kepada pengguna lain "
@@ -206,6 +210,8 @@
         android:id="@+id/tv_title4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:fontFamily="@font/prozalibremedium"
         android:gravity="center"
         android:text="Diary"
@@ -236,12 +242,13 @@
         android:fontFamily="@font/robotoregular"
         android:onClick="StartOnboarding"
         android:text="Mulai"
+        android:textStyle="bold"
+        android:textSize="18sp"
         android:theme="@style/TemaButton"
         tools:layout_editor_absoluteX="92dp"
         tools:layout_editor_absoluteY="649dp" />
 
     <!-- Onboarding 5 -->
-
 
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

@@ -295,7 +295,7 @@ object DummyRvHome {
         return categories
     }
 
-    fun generateDataRvArticle(): ArrayList<DummyRvArticle>{
+    fun generateDataRvArticle(): ArrayList<DummyRvArticle> {
         val categories = ArrayList<DummyRvArticle>()
         categories.clear()
 

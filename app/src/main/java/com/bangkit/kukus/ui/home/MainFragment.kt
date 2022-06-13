@@ -2,7 +2,10 @@ package com.bangkit.kukus.ui.home
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.*
+import android.view.LayoutInflater
+import android.view.MenuItem
+import android.view.View
+import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
@@ -21,7 +24,7 @@ import com.bumptech.glide.Glide
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 
-class MainFragment : Fragment() , NavigationView.OnNavigationItemSelectedListener {
+class MainFragment : Fragment(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var binding: FragmentMainBinding
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -44,7 +47,7 @@ class MainFragment : Fragment() , NavigationView.OnNavigationItemSelectedListene
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        if (currentUserID.isNotEmpty()){
+        if (currentUserID.isNotEmpty()) {
             FirestoreClass().dataUser(this)
         } else {
 
@@ -83,7 +86,7 @@ class MainFragment : Fragment() , NavigationView.OnNavigationItemSelectedListene
         startActivity(intent)
     }
 
-    fun updateNavigationUserDetails(user: User){
+    fun updateNavigationUserDetails(user: User) {
 
         val headerView = binding.navView.getHeaderView(0)
         val navUserImage = headerView.findViewById<ImageView>(R.id.imageView)
@@ -144,14 +147,13 @@ class MainFragment : Fragment() , NavigationView.OnNavigationItemSelectedListene
     private fun toggleDrawer() {
         if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
             binding.drawerLayout.closeDrawer(GravityCompat.START)
-        }
-        else {
+        } else {
             binding.drawerLayout.openDrawer(GravityCompat.START)
         }
     }
 
     companion object {
-        fun updateNavigationUserDetails(mainFragment: MainFragment, user: User){
+        fun updateNavigationUserDetails(mainFragment: MainFragment, user: User) {
             val headerView = mainFragment.binding.navView.getHeaderView(0)
             val navUserImage = headerView.findViewById<ImageView>(R.id.imageView)
             val userName = headerView.findViewById<TextView>(R.id.username)
